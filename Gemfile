@@ -46,4 +46,5 @@ group :development do
 end
 
 gem 'activeadmin', '~> 1.0.0.pre2'
+gem 'devise'
 
