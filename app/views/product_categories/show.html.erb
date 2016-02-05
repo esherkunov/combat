@@ -1,0 +1,15 @@
+<div class="content-div">
+
+  <!-- sidebar -->
+  <%= render 'partials/sidebar' %>
+
+  <div class="content-container">
+    <%= render partial: 'partials/product', collection: @products %>
+
+
+    <div class="clear"></div>
+    <!-- paginator -->
+    <%= render 'partials/paginator' %>
+
+  </div>
+</div>

@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   root 'pages#index'
 
   get 'contacts' => 'pages#contacts'
-
+  resources :product_categories, only: [:index, :show]
   resources :products, only: [:index, :show]
+
   resources :news, only: [:index, :show]
 
   # The priority is based upon order of creation: first created -> highest priority.

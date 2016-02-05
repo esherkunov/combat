@@ -1,18 +1,7 @@
 <ul>
   <li class="catalog-catpion">КАТАЛОГ</li>
-  <li class="catalog-active"><a href="#">Оружие нарезное</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Оружие гладкоствольное</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Оружие бесствольное</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Оружие травматическое</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Пневматика</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Ножи</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Оптика</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Снаряжение</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Одежда, обувь</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Чехлы, ремни</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Запчасти</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Товары для рыбалки</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Патроны нарезные</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Патроны гладкие</a><%= image_tag('arrow.png') %></li>
-  <li><a href="#">Патроны травматические</a><%= image_tag('arrow.png') %></li>
+  <% @categories.each do |category| %>
+    <li><%= link_to category.title, category %><%= image_tag('arrow.png') %></li>
+  <% end %>
+  <!--<li class="catalog-active"><a href="#">Оружие нарезное</a><%= image_tag('arrow.png') %></li>-->
 </ul>
