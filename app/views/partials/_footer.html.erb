@@ -3,10 +3,10 @@
     <div class="footer-left-div">
       <div class="footer-left-center">
         <ul class="footer-menu">
-          <li class="active"><a href="#">ГЛАВНАЯ</a></li>
-          <li><a href="#">КАТАЛОГ</a></li>
-          <li><a href="#">НОВОСТИ</a></li>
-          <li><a href="#">ИНФОРМАЦИЯ И КОНТАКТЫ</a></li>
+          <li class="active"><%= link_to 'ГЛАВНАЯ', '/' %></li>
+          <li><%= link_to 'КАТАЛОГ', products_path %></li>
+          <li><%= link_to 'НОВОСТИ', news_index_path %></li>
+          <li><%= link_to 'ИНФОРМАЦИЯ И КОНТАКТЫ', '/contacts' %></li>
         </ul>
       </div>
     </div>
