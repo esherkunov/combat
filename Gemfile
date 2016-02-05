@@ -5,6 +5,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+group :production do
+  gem 'pg'
+end
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
@@ -49,4 +53,11 @@ end
 
 gem 'activeadmin', '~> 1.0.0.pre2'
 gem 'devise'
+
+gem 'capistrano'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+gem 'capistrano-passenger'
+gem 'capistrano-rvm', github: 'capistrano/rvm'
+gem 'capistrano-rails-collection'
 
