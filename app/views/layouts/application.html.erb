@@ -14,44 +14,13 @@
   <!-- header -->
   <%= render 'partials/header' %>
 
-
-  <!-- slider -->
-  <%= render 'partials/slider' %>
-
-  <div class="content-div">
-
-    <!-- sidebar -->
-    <%= render 'partials/sidebar' %>
-
-    <div class="content-container">
-      <%= render 'partials/catalog_item' %>
-
-      <%= render 'partials/catalog_item' %>
-
-      <%= render 'partials/catalog_item' %>
-
-      <div class="clear"></div>
-      <!-- paginator -->
-      <%= render 'partials/paginator' %>
-
-    </div>
-  </div>
-
-  <div class="news-div">
-    <%= render 'partials/news_item' %>
-
-    <%= render 'partials/news_item' %>
-
-    <%= render 'partials/news_item' %>
-  </div>
+  <!-- content -->
+  <%= yield %>
 
   <!-- footer -->
   <%= render 'partials/footer' %>
 
 </div>
-
-
-<%= yield %>
 
 </body>
 </html>
