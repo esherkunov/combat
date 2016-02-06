@@ -1,0 +1,9 @@
+<div class="catalog-imem">
+  <div class="content-item-wraper">
+    <%= image_tag product.product_photo_path %>
+    <p><%= link_to product.title, product %>
+      <br/>
+      <span><%= number_to_currency product.price %></span>
+    </p>
+  </div>
+</div>

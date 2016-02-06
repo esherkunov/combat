@@ -1,0 +1,7 @@
+<ul>
+  <li class="catalog-catpion">КАТАЛОГ</li>
+  <% @categories.each do |category| %>
+    <li><%= link_to category.title, category %><%= image_tag('arrow.png') %></li>
+  <% end %>
+  <!--<li class="catalog-active"><a href="#">Оружие нарезное</a><%= image_tag('arrow.png') %></li>-->
+</ul>

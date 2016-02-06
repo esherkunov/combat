@@ -1,0 +1,21 @@
+<div class="header-div">
+  <div class="head">
+    <div class="menu-logo">
+      <a href="#"><%= image_tag('logo.png', class: 'logo') %></a>
+    </div>
+
+    <div class="menu-div">
+      <ul class="menu">
+        <li class="active"><%= link_to 'ГЛАВНАЯ', '/' %></li>
+        <li><%= link_to 'КАТАЛОГ', products_path %></li>
+        <li><%= link_to 'НОВОСТИ', news_index_path %></li>
+        <li><%= link_to 'ИНФОРМАЦИЯ И КОНТАКТЫ', '/contacts' %></li>
+      </ul>
+    </div>
+
+    <div class="menu-info">
+      <p><%= image_tag('phone.png') %>(8202) 51-02-95</p>
+      <p><%= image_tag('home.png') %>Череповец, ул. Парковая, д 7</p>
+    </div>
+  </div>
+</div>
