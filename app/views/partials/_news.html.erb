@@ -1,4 +1,6 @@
-<div class="news-item">
+<% additional_css ||= ''%>
+
+<div class="news-item <%= additional_css %>">
   <div class="news-date"><%= news.created_at.day %><br/><%= I18n.t("date.month_names")[news.created_at.month] %></div>
   <div class="news-content">
     <h2><%= news.title %></h2>
