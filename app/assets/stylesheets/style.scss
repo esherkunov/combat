@@ -256,6 +256,55 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 100%;
 }
 
+.catalog-imem-left-preview {
+    float: left;
+    width: 80px;
+}
+
+.catalog-imem-preview-img {
+    margin-bottom: 10px;
+}
+
+.catalog-item-right {
+    float: left;
+    overflow: hidden;
+}
+
+
+.catalog-imem-head-left {
+    float: left;
+    overflow: hidden;
+}
+
+.catalog-imem-head-right {
+    float: left;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.item-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    color: #98a450;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item-pay-cards {
+    margin: 10px 10px 0 0;
+}
+
+.catalog-item-description {
+    margin-top: 50px;
+    max-width: 600px;
+    padding-right: 5px;
+    text-align: left;
+}
+
 .catalog-imem p {
     background: #F0F0F0;
     color: #98A450;
@@ -509,6 +558,97 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+.about-top {
+    display: block;
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 30px;
+    overflow: hidden;
+    width: 48%;
+}
+
+.about-map {
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 30px;
+    width: 98%;
+}
+
+.about-bottom {
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 98%;
+}
+
+.about-header {
+    color: #737262;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.about-top > div {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.about-top img {
+    vertical-align: middle;
+    width: 28px;
+}
+
+.about-address {
+    font-size: 14px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.about-tel {
+    color: #98a450;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.about-mail {
+    color: #98a450;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.about-schedule-logo {
+    float: left;
+}
+
+.about-schedule {
+    float: left;
+    height: 64px;
+    margin-left: 10px;
+    padding-left: 2px;
+}
+
+.contact-form-text {
+    margin-bottom: 10px;
+    width: 97%;
+}
+
+.contact-form-textarea {
+    height: 10em;
+    margin-bottom: 10px;
+    width: 97%;
+}
+
+.contact-form-submit {
+    color: white;
+    background: #98a450;
+    border-radius: 3px;
+    padding: 5px 20px;
+}
+
+.about-bottom-body {
+    font-size: 14px;
+}
+
 @media only screen and (min-width: 800px) and (max-width: 1023px) {
     .search {
         padding: 0 5%;
@@ -517,6 +657,11 @@ h1, h2, h3, h4, h5, h6 {
 
     .search-btn {
         margin-top: 5px;
+    }
+
+    .catalog-imem-left-preview {
+        float: left;
+        width: initial;
     }
 }
 
@@ -556,6 +701,11 @@ h1, h2, h3, h4, h5, h6 {
     }
     .footer-menu li {
         float: initial;
+    }
+
+    .catalog-imem-left-preview {
+        float: left;
+        width: initial;
     }
 }
 
@@ -623,6 +773,15 @@ h1, h2, h3, h4, h5, h6 {
         display: table;
         margin: 0 auto;
         transform: initial;
+    }
+
+    .catalog-imem-left-preview {
+        float: left;
+        width: initial;
+    }
+
+    .catalog-imem-img {
+        width: 100%;
     }
 }
 
@@ -705,6 +864,29 @@ h1, h2, h3, h4, h5, h6 {
         display: table;
         margin: 0 auto;
         transform: initial;
+    }
+
+    .catalog-imem-left-preview {
+        float: left;
+        width: initial;
+    }
+
+    .catalog-imem-img {
+        width: 100%;
+    }
+
+    .catalog-item-description {
+        padding-right: 10px;
+    }
+
+    .about-top {
+        display: block;
+        float: left;
+        margin-right: 1%;
+        margin-left: 1%;
+        margin-bottom: 30px;
+        overflow: hidden;
+        width: 98%;
     }
 }
 
