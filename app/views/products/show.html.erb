@@ -1,0 +1,37 @@
+<div class="content-div">
+
+  <!-- sidebar -->
+  <%= render 'partials/sidebar' %>
+
+  <div class="content-container">
+    <!--<div class="catalog-imem-left-preview">-->
+      <!--<img class="catalog-imem-preview-img" src="images/preview_item1.png" alt=""/>-->
+      <!--<img class="catalog-imem-preview-img" src="images/preview_item2.png" alt=""/>-->
+      <!--<img class="catalog-imem-preview-img" src="images/preview_item1.png" alt=""/>-->
+    <!--</div>-->
+
+    <div class="catalog-item-right">
+      <div class="catalog-item-head">
+        <div class="catalog-imem-head-left">
+          <%= image_tag @product.product_photo_path, class: 'catalog-imem-img' %>
+        </div>
+        <div class="catalog-imem-head-right">
+          <p class="item-name"><%= @product.title %></p>
+          <!--<p class="item-art">Артикул: 125684</p>-->
+          <br/>
+          <p class="item-price"><%= number_to_currency @product.price %></p>
+          <br/>
+          <p>Магазин принимает к оплате пластиковые карты</p>
+          <%= image_tag 'visa.png', class: 'item-pay-cards' %>
+          <%= image_tag 'mc.png', class: 'item-pay-cards' %>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="catalog-item-description">
+        <%= @product.description %>
+      </div>
+    </div>
+  </div>
+</div>
